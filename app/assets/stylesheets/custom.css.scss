@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
 /* universal */
 
 body {
@@ -21,7 +25,6 @@ textarea {
     margin-bottom: 10px;
   }
 }
-
 
 /* typography */
 
@@ -73,10 +76,10 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a {
-    color: bold;
+    color: $gray;
     &:hover {
       color: $gray-darker;
     }
