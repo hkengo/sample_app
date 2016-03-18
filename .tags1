@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+UsersController	/Users/hayashikengo/int/rails/tutorial/sample_app/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	class	line:1
+show	/Users/hayashikengo/int/rails/tutorial/sample_app/app/controllers/users_controller.rb	/^  def show$/;"	method	line:4	class:UsersController
+new	/Users/hayashikengo/int/rails/tutorial/sample_app/app/controllers/users_controller.rb	/^  def new$/;"	method	line:10	class:UsersController
+create	/Users/hayashikengo/int/rails/tutorial/sample_app/app/controllers/users_controller.rb	/^  def create$/;"	method	line:15	class:UsersController
+edit	/Users/hayashikengo/int/rails/tutorial/sample_app/app/controllers/users_controller.rb	/^  def edit$/;"	method	line:26	class:UsersController
+update	/Users/hayashikengo/int/rails/tutorial/sample_app/app/controllers/users_controller.rb	/^  def update$/;"	method	line:31	class:UsersController
+user_params	/Users/hayashikengo/int/rails/tutorial/sample_app/app/controllers/users_controller.rb	/^    def user_params$/;"	method	line:43	class:UsersController
+logged_in_user	/Users/hayashikengo/int/rails/tutorial/sample_app/app/controllers/users_controller.rb	/^    def logged_in_user$/;"	method	line:48	class:UsersController
