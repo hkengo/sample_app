@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only: [:edit, :update]
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.where(activated: true).paginate(page: params[:page])
     # @title = "All users"
     # @users = User.all
   end
@@ -11,7 +11,11 @@ class UsersController < ApplicationController
   def show
     @title = "Show"
     @user = User.find(params[:id])
-    #debugger       デバッグに有効
+    unless @user[:activated] == true
+      flash[:danger] = "The user is not activated."
+      redirect_to root_path
+      return
+    end
   end
 
   def new
