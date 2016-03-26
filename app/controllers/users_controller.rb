@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   def show
     @title = "Show"
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:pages])
     unless @user[:activated] == true
       flash[:danger] = "The user is not activated."
       redirect_to root_path
@@ -60,15 +61,6 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password,
       :password_confirmation)
-    end
-
-    #ログイン済みユーザーかどうか確認
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "Please log in."
-        redirect_to login_url
-      end
     end
 
     #正しいユーザーかどうか確認
